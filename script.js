@@ -5,11 +5,13 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
 let library = [];
 
-function Book(title, author, pages, status) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
+class Book {
+    constructor(title, author, pages, status) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+    }
 }
 
 library[0] = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read yet");
